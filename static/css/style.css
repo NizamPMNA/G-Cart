@@ -192,9 +192,10 @@ body{
     text-indent: -9999px;
     overflow: hidden;
     text-decoration: none;
+	display: none;
     width: 50px;
     height: 50px;
-    background: transparent url(../images/arrows.png) no-repeat left top;
+    /* background: transparent url(../images/arrows.png) no-repeat left top; */
 }
 .callbacks_nav.next {
     left: auto;
@@ -307,8 +308,8 @@ body{
 }
 .banner_text h3 {
     color: #FFFFFF;
-    font-size: 7em;
-    margin: 0;
+    font-size: 30px;
+    margin-bottom: 46px;
     font-weight: 100;
     text-transform: uppercase;
 }
@@ -411,6 +412,13 @@ body{
 .markets-grids,.agileits-feedback-grids,.w3-agileits-newsletter,.team-grids,.agile-contact-form,.w3-agile-testimonial,.wthree-blog-grids,.w3_mail_grids,.agileits-team-grids{
     margin: 4em 0 0 0;
 }
+.mem {
+	display: flex;
+	justify-content: center;
+}
+.mem img{
+	border-radius: 10px;
+}
 .agileits-icon-grid {
     padding: 2em;
     background: #FFFFFF;
@@ -454,12 +462,15 @@ body{
 /*-- //markets --*/
 /*-- portfolio --*/
 .filtr-item {
-	padding: 0;
+	padding: 5px;
 	width: 33.3335%;
 	float: left;
+	
 }
+
 .filtr-container {
 	width: 100%;
+
 }
 .item-desc {
 	background-color: rgba(0,0,0,0.5);
@@ -527,6 +538,7 @@ ul.simplefilter {
 	.filtr-item {
 		float: left;
 		width: 33.33%;
+		padding: 5px;
 	}
 	.simplefilter li, .multifilter li, .sortandshuffle li {
 		padding: 10px 13px;
@@ -537,6 +549,7 @@ ul.simplefilter {
 	.filtr-item {
 		float: left;
 		width: 50%;
+		padding: 5px;
 	}
 	.simplefilter li, .multifilter li, .sortandshuffle li {
 		padding: 8px 10px;
@@ -547,6 +560,7 @@ ul.simplefilter {
 @media screen and (max-width:600px) {
 	.filtr-item {
 		padding: 0em;
+		padding: 5px;
 	}
 	ul.simplefilter {
 		margin-bottom: 0em;
@@ -561,6 +575,7 @@ ul.simplefilter {
 	}
 	.filtr-item {
 		width: 100%;
+		padding: 5px;
 	}
 	.simplefilter li, .multifilter li, .sortandshuffle li {
 		padding: 4px 4px;
@@ -581,12 +596,13 @@ ul.simplefilter {
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	filter: alpha(opacity=100);
 	opacity: 1;
-	-webkit-transform: rotate(0);
+	/* -webkit-transform: rotate(0);
 	-moz-transform: rotate(0);
 	-o-transform: rotate(0);
 	-ms-transform: rotate(0);
-	transform: rotate(0);
+	transform: rotate(0); */
 	top: 0;
+	backdrop-filter: blur(2px);
 }
 .portfolio figcaption {
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
@@ -617,14 +633,13 @@ ul.simplefilter {
 .portfolio figcaption h3 {
     color: #FFF;
     text-align: center;
-    margin-bottom: 0;
     font-size: 2em;
     letter-spacing: 3px;
     font-weight: 700;
 	font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     position: relative;
-    margin-top: 105px;
+	min-height: 100%;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
@@ -750,6 +765,9 @@ ul.simplefilter {
     font-size: .9em;
     margin: 1em 0;
     font-style: italic;
+	padding: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 /*-- //testimonial --*/
 /*-- team --*/
@@ -785,7 +803,7 @@ ul.simplefilter {
 	color: #333;
     text-align: center;
 }
-.team-caption ul li a i.fa.fa-facebook{
+.team-caption ul li a i.fa.fa-linkedin{
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -798,10 +816,10 @@ ul.simplefilter {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-.team-caption ul li a i.fa.fa-facebook:hover {
+.team-caption ul li a i.fa.fa-linkedin:hover {
     background: #3b5998;
 }
-.team-caption ul li a i.fa.fa-twitter{
+.team-caption ul li a i.fa.fa-instagram{
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -814,10 +832,10 @@ ul.simplefilter {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-.team-caption ul li a i.fa.fa-twitter:hover{
-	background: #55acee;
+.team-caption ul li a i.fa.fa-instagram:hover{
+	background: rgb(230, 31, 113);
 }
-.team-caption ul li a i.fa.fa-rss{
+.team-caption ul li a i.fa.fa-github{
     height: 30px;
     width: 30px;
     line-height: 30px;
@@ -830,8 +848,8 @@ ul.simplefilter {
     -o-transition: 0.5s all;
     -ms-transition: 0.5s all;
 }
-.team-caption ul li a i.fa.fa-rss:hover{
-	background: #f26522;
+.team-caption ul li a i.fa.fa-github:hover{
+	background: #473c39;
 }
 .team-caption {
     background: #FF9800;
@@ -1330,7 +1348,7 @@ ul.simplefilter {
 		right: -35%;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 87px;
+		/* margin-top: 87px; */
 	}
 	.input {
 		max-width: 29.5%;
@@ -1372,7 +1390,7 @@ ul.simplefilter {
 		width: 50%;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 70px;
+		/* margin-top: 70px; */
 	}
 	.testimonial-img-info p {
 		width: 85%;
@@ -1406,7 +1424,7 @@ ul.simplefilter {
 		left: 47%;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 100px;
+		/* margin-top: 100px; */
 	}
 }
 @media(max-width:736px){
@@ -1483,7 +1501,7 @@ ul.simplefilter {
 		width: 72%;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 75px;
+		/* margin-top: 75px; */
 	}
 	.testimonial-img-grid {
 		width: 60%;
@@ -1527,7 +1545,7 @@ ul.simplefilter {
 		padding: 3em 0;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 60px;
+		/* margin-top: 60px; */
 		font-size: 1.5em;
 	}
 	.testimonial-img:nth-child(2) {
@@ -1563,7 +1581,8 @@ ul.simplefilter {
 	.callbacks_nav {
 		width: 35px;
 		height: 35px;
-		background: transparent url(../images/arrows.png) no-repeat left top;
+		display: none;
+		/* background: transparent url(../images/arrows.png) no-repeat left top; */
 		background-size: 203%;
 	}
 	.w3about-text {
@@ -1596,7 +1615,7 @@ ul.simplefilter {
 		margin: 2em 0 2em;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 105px;
+		/* margin-top: 105px; */
 	}
 	.agileits-title h2, .agileits-title h3 {
 		font-size: 2.5em;
@@ -1638,7 +1657,7 @@ ul.simplefilter {
 		padding: 1em;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 95px;
+		/* margin-top: 95px; */
 	}
 	.agileits-team-grid {
 		float: none;
@@ -1688,7 +1707,7 @@ ul.simplefilter {
 		width: 87%;
 	}
 	.portfolio figcaption h3 {
-		margin-top: 80px;
+		/* margin-top: 80px; */
 	}
 	.agileits-title h2, .agileits-title h3 {
 		font-size: 2em;
