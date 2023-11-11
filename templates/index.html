@@ -1,44 +1,49 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Game-on</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<meta name="keywords" content="Games Hub Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- bootstrap-css -->
-<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all" />
-<!--// bootstrap-css -->
-<!-- css -->
-<link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css" media="all" />
-<!--// css -->
-<!-- font-awesome icons -->
-<link href="{% static 'css/font-awesome.css'%}" rel="stylesheet"> 
-<!-- //font-awesome icons -->
-<!-- portfolio -->	
-<link rel="stylesheet" href="{% static 'css/chocolat.css'%}" type="text/css" media="all">
-<!-- //portfolio -->	
-<!-- font -->
-<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!-- //font -->
-<script src="{% static 'js/jquery-1.11.1.min.js'%}"></script>
-<script src="{% static 'js/bootstrap.js'%}"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
-			event.preventDefault();
-			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-		});
-	});
-</script> 
 
-<!--[if lt IE 9]>
+<head>
+	<title>Game-on</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="keywords" content="Games Hub Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css'%}" rel="stylesheet">
+	<!-- //font-awesome icons -->
+	<!-- portfolio -->
+	<link rel="stylesheet" href="{% static 'css/chocolat.css'%}" type="text/css" media="all">
+	<!-- //portfolio -->
+	<!-- font -->
+	<link href="//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+		rel="stylesheet">
+	<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300'
+		rel='stylesheet' type='text/css'>
+	<!-- //font -->
+	<script src="{% static 'js/jquery-1.11.1.min.js'%}"></script>
+	<script src="{% static 'js/bootstrap.js'%}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+
+	<!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <![endif]-->
 </head>
+
 <body>
 	<!-- banner -->
 	<div class="banner">
@@ -52,7 +57,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav class="navbar navbar-default">
 							<!-- Brand and toggle get grouped for better mobile display -->
 							<div class="navbar-header">
-								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+									data-target="#bs-example-navbar-collapse-1">
 									<span class="sr-only">Toggle navigation</span>
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
@@ -88,15 +94,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li>
 											<div class="banner_text">
 												<h3>Where Every Game is a Victory</h3>
-												
-												
+
+
 											</div>
 										</li>
 										<li>
 											<div class="banner_text">
 												<h3>Compete, Conquer, and Celebrate with Game On!</h3>
-												
-												
+
+
 											</div>
 										</li>
 									</ul>
@@ -106,23 +112,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<script>
 									// You can also use "$(window).load(function() {"
 									$(function () {
-									  // Slideshow 4
-									  $("#slider4").responsiveSlides({
-										auto: true,
-										pager:true,
-										nav:true,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-										  $('.events').append("<li>before event fired.</li>");
-										},
-										after: function () {
-										  $('.events').append("<li>after event fired.</li>");
-										}
-									  });
-								
+										// Slideshow 4
+										$("#slider4").responsiveSlides({
+											auto: true,
+											pager: true,
+											nav: true,
+											speed: 500,
+											namespace: "callbacks",
+											before: function () {
+												$('.events').append("<li>before event fired.</li>");
+											},
+											after: function () {
+												$('.events').append("<li>after event fired.</li>");
+											}
+										});
+
 									});
-								 </script>
+								</script>
 								<!--banner Slider starts Here-->
 							</div>
 						</div>
@@ -133,30 +139,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //banner -->
 	<!-- about -->
-	<div class="about" id="about"> 
-		<div class="container"> 
+	<div class="about" id="about">
+		<div class="container">
 			<div class="welcome">
-				<div class="agileits-title"> 
+				<div class="agileits-title">
 					<h2>Welcome</h2>
-					<p>This is a website where enthusiasts of all levels come together to explore,play and conquer the world of video games.</p>
+					<p>This is a website where enthusiasts of all levels come together to explore,play and conquer the
+						world of video games.</p>
 				</div>
 			</div>
-			<div class="about-w3lsrow"> 
-				<div class="col-md-7 col-sm-7 w3about-img"> 
-					<div class="w3about-text"> 
+			<div class="about-w3lsrow">
+				<div class="col-md-7 col-sm-7 w3about-img">
+					<div class="w3about-text">
 						<h5 class="w3l-subtitle">- About Us</h5>
-						<p>We are here to inform,entertain and connect gamers from all walk of life.Explore our websites to find in depth games,reviews,gaming news,updates and pro tips for your games.</p>
+						<p>We are here to inform,entertain and connect gamers from all walk of life.Explore our websites
+							to find in depth games,reviews,gaming news,updates and pro tips for your games.</p>
 					</div>
-				</div> 
+				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-	<!-- //about --> 
+	<!-- //about -->
 	<!-- markets -->
 	<div class="markets" id="markets">
 		<div class="container">
-			<div class="agileits-title"> 
+			<div class="agileits-title">
 				<h3>Our Services</h3>
 			</div>
 			<div class="markets-grids">
@@ -167,7 +175,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="icon-right">
 							<h5>Game Store </h5>
-							<p>Sell the gaming merchandise such as apparel,collectibles,accessories, and branded items related to popular games.</p>
+							<p>Sell the gaming merchandise such as apparel,collectibles,accessories, and branded items
+								related to popular games.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -191,7 +200,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="icon-right">
 							<h5>Gaming Community</h5>
-							<p>Foster a sense of community by providing forums,discussion boards and chat rooms that gamers connect and share experiences.</p>
+							<p>Foster a sense of community by providing forums,discussion boards and chat rooms that
+								gamers connect and share experiences.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -203,7 +213,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="icon-right">
 							<h5>Game Recommendations</h5>
-							<p>Implement a recommendation system that suggests games to user based on their prefeernces and past gaming history.</p>
+							<p>Implement a recommendation system that suggests games to user based on their prefeernces
+								and past gaming history.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -215,7 +226,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="icon-right">
 							<h5>Game Reviews</h5>
-							<p>Comprehensive game reviews with rating ,covering various platforms and genres and insights on gameplay,graphics,storylines and quality.</p>
+							<p>Comprehensive game reviews with rating ,covering various platforms and genres and
+								insights on gameplay,graphics,storylines and quality.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -227,7 +239,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="icon-right">
 							<h5>Game News and Updates</h5>
-							<p>Keep gamers informed with latest industry news ,game releases, updates and announcements .</p>
+							<p>Keep gamers informed with latest industry news ,game releases, updates and announcements
+								.</p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -240,8 +253,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- portfolio -->
 	<div class="portfolio" id="gallery">
 		<div class="container">
-			<div class="agileits-title"> 
-				<h3>Our Games</h3> 
+			<div class="agileits-title">
+				<h3>Our Games</h3>
 			</div>
 			<ul class="simplefilter w3layouts agileits">
 				<li class="active w3layouts agileits" data-filter="all">All</li>
@@ -255,178 +268,266 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="filtr-container w3layouts agileits">
 
 				<div class="filtr-item w3layouts agileits portfolio-t" data-category="1" data-sort="Busy streets">
-					<a href="{% static 'games/efootball24.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/efootball24.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/efootball24.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/efootball24.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>E-football <span>24</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 
 				<div class="filtr-item w3layouts agileits" data-category="1" data-sort="Luminous night">
-					<a href="{% static 'games/fifa16.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/fifa16.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/fifa16.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/fifa16.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>Fifa <span>16</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="1" data-sort="Luminous night">
-					<a href="{% static 'games/fifa23.webp'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
+					<a href="{% static 'games/fifa23.webp'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
 							<img src="{% static 'games/fifa23.webp'%}" class="img-responsive w3layouts agileits"
 								alt="W3layouts Agileits">
-							<figcaption>
+							<!-- <figcaption>
 								<h3>Fifa <span>23</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="1" data-sort="City wonders">
-					<a href="{% static 'games/fifa21.avif'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/fifa21.avif'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/fifa21.avif'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/fifa21.avif'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>Fifa <span>21</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 
 				<div class="filtr-item w3layouts agileits" data-category="2" data-sort="In production">
-					<a href="{% static 'games/bgmi.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/bgmi.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/bgmi.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/bgmi.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>BGMI <span></span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 
 				<div class="filtr-item w3layouts agileits" data-category="2" data-sort="Industrial site">
-					<a href="{% static 'games/ff.avif'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/ff.avif'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/ff.avif'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/ff.avif'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>FreeFire <span>MAX</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 
 				<div class="filtr-item w3layouts agileits" data-category="3" data-sort="Peaceful lake">
-					<a href="{% static 'games/farcry4.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/farcry4.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/farcry4.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/farcry4.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>FarCry <span>4</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 
 				<div class="filtr-item w3layouts agileits" data-category="3" data-sort="City lights">
-					<a href="{% static 'games/hitman2.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/hitman2.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/hitman2.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/hitman2.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>Hitman <span>2</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 
 				<div class="filtr-item w3layouts agileits" data-category="3" data-sort="Dreamhouse">
-					<a href="{% static 'games/hitmanbloodmoney.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/hitmanbloodmoney.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/hitmanbloodmoney.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/hitmanbloodmoney.jpg'%}"
+								class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>Hitman <span>BLOODMONEY</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="{% static 'zip/Hitman-BloodMoney.zip'%}" download><button
+										class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="3" data-sort="Dreamhouse">
-					<a href="{% static 'games/maxpayne2.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
+					<a href="{% static 'games/maxpayne2.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
 							<img src="{% static 'games/maxpayne2.jpg'%}" class="img-responsive w3layouts agileits"
 								alt="W3layouts Agileits">
-							<figcaption>
+							<!-- <figcaption>
 								<h3>MaxPayne <span>2</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="3" data-sort="Dreamhouse">
-					<a href="{% static 'games/maxpayne3.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
+					<a href="{% static 'games/maxpayne3.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
 							<img src="{% static 'games/maxpayne3.jpg'%}" class="img-responsive w3layouts agileits"
 								alt="W3layouts Agileits">
-							<figcaption>
+							<!-- <figcaption>
 								<h3>MaxPayne <span>3</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="2" data-sort="Dreamhouse">
-					<a href="{% static 'games/igi2.png'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/igi2.png'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/igi2.png'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/igi2.png'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>IGI <span>2</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="4" data-sort="Dreamhouse">
-					<a href="{% static 'games/motogp22.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/motogp22.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/motogp22.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/motogp22.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>MotoGP <span>22</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="4" data-sort="Dreamhouse">
-					<a href="{% static 'games/forza5.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
-							<img src="{% static 'games/forza5.jpg'%}" class="img-responsive w3layouts agileits" alt="W3layouts Agileits">
-							<figcaption>
+					<a href="{% static 'games/forza5.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
+							<img src="{% static 'games/forza5.jpg'%}" class="img-responsive w3layouts agileits"
+								alt="W3layouts Agileits">
+							<!-- <figcaption>
 								<h3>ForzaHorizon <span>5</span></h3>
-							</figcaption>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 						</figure>
 					</a>
 				</div>
 				<div class="filtr-item w3layouts agileits" data-category="5" data-sort="Dreamhouse">
-					<a href="{% static 'games/wwe12.jpg'%}" class="b-link-stripe w3layouts agileits b-animate-go thickbox">
-						<figure>
+					<a href="{% static 'games/wwe12.jpg'%}"
+						class="b-link-stripe w3layouts agileits b-animate-go thickbox">
+						<figure class="figure">
 							<img src="{% static 'games/wwe12.jpg'%}" class="img-responsive w3layouts agileits"
 								alt="W3layouts Agileits">
-							<figcaption>
+							<!-- <figcaption>
 								<h3>WWE <span>12</span></h3>
-							</figcaption>
-						</figure>
-					</a>
+							</figcaption> -->
+							<div class="team-caption">
+								<a href="" download><button class="btn btn-success">Download</button></a>
+								<p>Hitman-BloodMoney.zip</p>
+							</div>
 				</div>
-				<div class="clearfix"></div>
+				</a>
 			</div>
+			<div class="clearfix"></div>
 		</div>
+	</div>
 	</div>
 	<!-- //portfolio -->
 	<!-- modal -->
 	<div class="modal about-modal fade" id="myModal" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
-				<div class="modal-header"> 
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
 					<h4 class="modal-title">Games <span>Hub</span></h4>
-				</div> 
+				</div>
 				<div class="modal-body">
 					<div class="agileits-w3layouts-info">
 						<img src="{% static 'images/1.jpg'%}" alt="" />
@@ -441,8 +542,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="jarallax testimonial" id="testimonial">
 		<div class="testimonial-dot">
 			<div class="container">
-				<div class="agileits-title testimonial-heading"> 
-					<h3>Testimonial</h3> 
+				<div class="agileits-title testimonial-heading">
+					<h3>Testimonial</h3>
 				</div>
 				<div class="w3-agile-testimonial">
 					<div class="slider">
@@ -456,7 +557,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="testimonial-img">
 											<img src="{% static 'images/ff.png'%}" alt="" />
 										</div>
-										
+
 										<div class="testimonial-img t-img2">
 											<img src="{% static 'images/bgmi.webp'%}" alt="" />
 										</div>
@@ -473,7 +574,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<div class="testimonial-img t-img1">
 											<img src="{% static 'images/ff.png'%}" alt="" />
 										</div>
-										
+
 										<div class="testimonial-img">
 											<img src="{% static 'images/bgmi.webp'%}" alt="" />
 										</div>
@@ -490,7 +591,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</li>
 								<li>
 									<div class="testimonial-img-grid">
-										
+
 										<div class="testimonial-img t-img1">
 											<img src="{% static 'images/bgmi.webp'%}" alt="" />
 										</div>
@@ -505,32 +606,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="testimonial-img-info">
 										<p></p>
 										<h5>E-football</h5>
-										<h6>eFootball is a series of association football simulation video game published by Konami.</h6>
+										<h6>eFootball is a series of association football simulation video game
+											published by Konami.</h6>
 									</div>
 								</li>
-								
+
 							</ul>
 						</div>
 						<div class="clearfix"> </div>
 						<script>
-									// You can also use "$(window).load(function() {"
-									$(function () {
-									  // Slideshow 4
-									  $("#slider3").responsiveSlides({
-										auto: true,
-										pager:false,
-										nav:false,
-										speed: 500,
-										namespace: "callbacks",
-										before: function () {
-										  $('.events').append("<li>before event fired.</li>");
-										},
-										after: function () {
-										  $('.events').append("<li>after event fired.</li>");
-										}
-									  });
-								
-									});
+							// You can also use "$(window).load(function() {"
+							$(function () {
+								// Slideshow 4
+								$("#slider3").responsiveSlides({
+									auto: true,
+									pager: false,
+									nav: false,
+									speed: 500,
+									namespace: "callbacks",
+									before: function () {
+										$('.events').append("<li>before event fired.</li>");
+									},
+									after: function () {
+										$('.events').append("<li>after event fired.</li>");
+									}
+								});
+
+							});
 						</script>
 						<!--banner Slider starts Here-->
 					</div>
@@ -542,19 +644,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- team -->
 	<div class="team" id="team">
 		<div class="container">
-			<div class="agileits-title"> 
-				<h3>Our Team</h3> 
+			<div class="agileits-title">
+				<h3>Our Team</h3>
 			</div>
 			<div class="agileits-team-grids mem">
 				<div class="col-md-3 agileits-team-grid">
 					<div class="team-info">
 						<img src="{% static 'images/riz.jpg'%}" alt="Rizwan">
-						<div class="team-caption"> 
+						<div class="team-caption">
 							<h4>Rizvan</h4>
 							<p>Python Django Developer</p>
 							<ul>
-								<li><a href="https://www.linkedin.com/in/risvan-k-t-552958281/"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.instagram.com/rizwan__rich_u_/"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/risvan-k-t-552958281/"><i
+											class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://www.instagram.com/rizwan__rich_u_/"><i
+											class="fa fa-instagram"></i></a></li>
 								<li><a href="https://github.com/Riswan200106/"><i class="fa fa-github"></i></a></li>
 							</ul>
 						</div>
@@ -563,12 +667,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 agileits-team-grid">
 					<div class="team-info">
 						<img src="{% static 'images/niz.jpg'%}" alt="Nizam">
-						<div class="team-caption"> 
+						<div class="team-caption">
 							<h4>Nizam</h4>
 							<p>Python Django Developer</p>
 							<ul>
-								<li><a href="https://www.linkedin.com/in/nizam-pmna/"><i class="fa fa-linkedin"></i></a></li>
-								<li><a href="https://www.instagram.com/niz4m_pmna/"><i class="fa fa-instagram"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/nizam-pmna/"><i class="fa fa-linkedin"></i></a>
+								</li>
+								<li><a href="https://www.instagram.com/niz4m_pmna/"><i class="fa fa-instagram"></i></a>
+								</li>
 								<li><a href="https://github.com/NizamPMNA/"><i class="fa fa-github"></i></a></li>
 							</ul>
 						</div>
@@ -580,15 +686,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //team -->
 
-	
+
 	<!-- contact -->
 	<div id="contact" class="contact">
-		<div class="contact-row agileits-w3layouts">  
+		<div class="contact-row agileits-w3layouts">
 			<div class="col-md-5 contact-w3lsleft map">
 				<img src="{% static 'images/p5.jpg'%}" style="width: 630px; height: 550px;" alt="">
 			</div>
 			<div class="col-md-7 contact-w3lsright">
-				<h6>Feel free to get in touch with us using the contact from below or reach out through our social media. </h6>
+				<h6>Feel free to get in touch with us using the contact from below or reach out through our social
+					media. </h6>
 				<div class="col-xs-6 address-row">
 					<div class="col-xs-2 address-left">
 						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
@@ -620,7 +727,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p>+01 222 333 5555</p>
 					</div>
 					<div class="clearfix"> </div>
-				</div> 
+				</div>
 				<div class="col-xs-6 address-row">
 					<div class="col-xs-2 address-left">
 						<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
@@ -628,17 +735,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-xs-10 address-right">
 						<h5>Working Hours</h5>
 						<p>Mon - Fri : 8:00 am to 10:30 pm<br>
-						Sat - Sun : 9:00 am to 11:30 pm</p>
+							Sat - Sun : 9:00 am to 11:30 pm</p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="clearfix"> </div>	
+				<div class="clearfix"> </div>
 			</div>
 			<div class="clearfix"> </div>
-		</div>	
+		</div>
 	</div>
-	<!-- //contact -->  
-	
+	<!-- //contact -->
+
 	{% include 'footer.html' %}
 
 	<script src="{% static 'js/jarallax.js'%}"></script>
@@ -656,7 +763,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script type="text/javascript" src="{% static 'js/easing.js'%}"></script>
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			/*
 				var defaults = {
 				containerID: 'toTop', // fading element id
@@ -665,28 +772,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				easingType: 'linear' 
 				};
 			*/
-								
+
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+
+		});
 	</script>
 	<!-- //here ends scrolling icon -->
 	<!-- Tabs-JavaScript -->
 	<script src="{% static 'js/jquery.filterizr.js'%}"></script>
-		<script src="{% static 'js/controls.js'%}"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.filtr-container').filterizr();
-			});
-		</script>
+	<script src="{% static 'js/controls.js'%}"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.filtr-container').filterizr();
+		});
+	</script>
 	<!-- //Tabs-JavaScript -->
 	<!-- PopUp-Box-JavaScript -->
-		<script src="{% static 'js/jquery.chocolat.js'%}"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.filtr-item a').Chocolat();
-			});
-		</script>
+	<script src="{% static 'js/jquery.chocolat.js'%}"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.filtr-item a').Chocolat();
+		});
+	</script>
 	<!-- //PopUp-Box-JavaScript -->
-</body>	
+</body>
+
 </html>
