@@ -20,4 +20,5 @@ from . import views
 
 urlpatterns = [
     path('',views.index, name='index'),
+    path('tournaments/',views.tour, name='tour'),
 ]
