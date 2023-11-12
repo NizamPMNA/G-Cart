@@ -4,3 +4,7 @@ from django.shortcuts import render
 def index(request):
     
     return render(request,'index.html')
+
+def tour(request):
+
+    return render(request,'tournaments/tour.html')
