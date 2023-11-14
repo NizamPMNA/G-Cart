@@ -1,12 +1,17 @@
 
 {% extends 'tournaments/layout.html' %}
 {% load static %}
+{% block stylesheet %}
+<link href="{% static 'css/layout.css' %}" rel="stylesheet" />
+<link href="{% static 'css/tour.css' %}" rel="stylesheet" />
+{% endblock stylesheet %}
+
     {% block section %}
     
-        <div class="container">
+        <div class="container_section">
          <div class="row">
             <div class="card col-md-4" style="width: 25%; height: 100%;">
-                <a href="">
+                <a href="{% url 'football' %}">
                 <img src="{% static 'tour/football/football.jpg' %}" class="card-img-top card-img-bottom" alt="...">
                 <div class="card-body">
                     <p class="card-text">Football Tournaments</p>

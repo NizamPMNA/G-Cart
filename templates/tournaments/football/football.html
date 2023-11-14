@@ -1,0 +1,35 @@
+{% extends 'tournaments/layout.html' %}
+{% load static %}
+{% block stylesheet %}
+<link href="{% static 'css/layout.css' %}" rel="stylesheet" />
+<link href="{% static 'css/football/football.css' %}" rel="stylesheet"/>
+{% endblock stylesheet %}
+{% block section %}
+
+<div class="container_section">
+    <div class="row">
+        <div class="card col-md-4" style="width: 25%; height: 100%;">
+            <a href="{% url 's_elimination' %}">
+                <div class="card-body">
+                    <p class="card-head">Single Elimination</p>
+                </div>
+                <img src="{% static 'tour/football/single_elimination.png' %}" class="card-img-top card-img-bottom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This is a knockout tournament. The Loser of the match immediately eliminated from the tournament.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card col-md-4" style="width: 25%; height: 100;">
+            <a href="">
+                <div class="card-body">
+                    <p class="card-head">Round Robin</p>
+                </div>
+                <img src="{% static 'tour/football/round_robin.png' %}" class="card-img-top card-img-bottom" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This is a League tournament. Each participants meets all other participants in turn.</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock section %}
