@@ -8,3 +8,11 @@ def index(request):
 def tour(request):
 
     return render(request,'tournaments/tour.html')
+
+def football(request):
+
+    return render(request,'tournaments/football/football.html')
+
+def single_elimination(request):
+
+    return render(request,'tournaments/football/single_elimination.html')
