@@ -1,0 +1,26 @@
+.logo {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.logo h6 {
+    margin: 0;
+}
+
+.logo h6 a {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #FF9800;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 6px;
+    padding: 0;
+}
+
+.logo h6 a span {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #111010;
+}

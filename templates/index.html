@@ -76,6 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<li><a href="#team" class="scroll">E-Shop</a></li>
 										<li><a href="#reviews" class="scroll">Reviews</a></li>
 										<li><a href="#mail" class="scroll">Mail Us</a></li>
+										<button class="btn btn-primary" onclick="redirectToPage()">Login</button>
 									</ul>
 								</nav>
 							</div>
@@ -763,6 +764,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="{% static 'js/responsiveslides.min.js'%}"></script>
 	<script type="text/javascript" src="{% static 'js/move-top.js'%}"></script>
 	<script type="text/javascript" src="{% static 'js/easing.js'%}"></script>
+	<!-- JavaScript function to handle the redirection -->
+	<script type="text/javascript">
+		function redirectToPage() {
+			// You can replace '.html' with the URL of the page you want to redirect to
+			window.location.href = 'login';
+		}
+	</script>
 	<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function () {

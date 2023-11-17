@@ -94,7 +94,9 @@ body {
 	background: none;
 	margin: 4em 0 0 0;
 }
-
+.navbar-nav button:focus{
+	outline: none !important;
+}
 .header-top-info ul li {
 	display: inline-block;
 	float: none;
