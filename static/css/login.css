@@ -95,7 +95,7 @@ body{
 .or{
     display: flex !important;
     width: 100% !important;
-    margin-top: 1em;
+    margin-top: 0em !important;
 }
 .or span{
     color: #FFFFFF;
@@ -130,7 +130,7 @@ body{
 }
 .watermark {
     text-align: center;
-    border-top: 1px solid white;
+    
     margin-top: auto;
     padding-top: 1.8em;
 }

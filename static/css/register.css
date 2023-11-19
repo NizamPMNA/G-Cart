@@ -24,3 +24,9 @@
     font-weight: 300;
     color: #111010;
 }
+.error{
+    color: red;
+    font-size: small;
+    font-family: system-ui;
+    font-weight: 400;
+}
