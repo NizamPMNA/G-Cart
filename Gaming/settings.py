@@ -83,10 +83,15 @@ WSGI_APPLICATION = 'Gaming.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'usersdb',
+        'USER': 'Gameonlive',
+        'PASSWORD': '85908gameon10126',
+        'HOST': 'localhost',  # Set database host, usually 'localhost'
+        'PORT': '3306',      # Set MySQL port, usually '3306'
     }
 }
+
 
 
 # Password validation
@@ -141,8 +146,8 @@ AUTHENTICATION_BACKENDS = [
 
 # SOCIAL_AUTH_REDIRECT_URI = 'http://localhost:8000/auth/complete/google-oauth2/'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '379606456445-v5i2ed6d2nglfk75gj51nac0fb95m85a.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '986868187114-ogqn8klqm6hpqu3ut5p4lpvlobhvl581.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
 LOGIN_URL = 'index'
 LOGOUT_URL = 'index'
 LOGIN_REDIRECT_URL = 'index'

@@ -12,10 +12,12 @@ body{
 }
 .row .login{
     padding: 2em !important;
-    width: 30% !important;
+    padding-left: 4em!important;
+    padding-right: 4em!important;
+    width: 40% !important;
 }
 .row .img{
-    width: 70% !important;
+    width: 60% !important;
     padding: 0;
 }
 #login_img{
@@ -84,8 +86,7 @@ body{
     color: #999999;
 }
 .login button {
-    margin-top: .5em;
-    width: 100%;
+    height: 10px;
 }
 .login #input{
     margin-top: 1em;
@@ -154,4 +155,26 @@ body{
     letter-spacing: 1px;
     font-weight: 300;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+
+    /* Styles specific to screens with a width of 1024 pixels or larger go here */
+    .row{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .row .login{
+        padding: 2em !important;
+        padding-left: 2em!important;
+        padding-right: 2em!important;
+        width: 100% !important;
+    }
+    .row .img{
+        width: 0% !important;
+    }
+    .container{
+        padding: 3em !important;
+    }
+
 }
