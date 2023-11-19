@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'usersdb',
         'USER': 'Gameonlive',
         'PASSWORD': '85908gameon10126',
-        'HOST': 'localhost',  # Set database host, usually 'localhost'
+        'HOST': 'localhost,Gameonlive.mysql.pythonanywhere-services.com',  # Set database host, usually 'localhost'
         'PORT': '3306',      # Set MySQL port, usually '3306'
     }
 }
